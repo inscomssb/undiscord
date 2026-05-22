@@ -1,4 +1,7 @@
 /* undiscord window */
+#undiscord {
+    color: #dcddde !important;
+}
 #undiscord.browser {
     box-shadow: var(--shadow-border), var(--shadow-high);
         border: 1px solid var(--border-subtle);
@@ -21,7 +24,7 @@
     min-height: 48px;
     padding: 0 16px;
     display: flex;
-    color: var(--header-secondary);
+    color: var(--header-secondary, #b9bbbe) !important;
     cursor: grab;
 }
 
@@ -59,9 +62,10 @@
     flex-shrink: 0;
 }
 
+#undiscord summary,
 #undiscord legend,
 #undiscord label {
-    color: var(--header-secondary);
+    color: var(--header-secondary, #b9bbbe) !important;
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
@@ -78,7 +82,7 @@
     box-sizing: border-box;
     width: 100%;
     border-radius: 3px;
-    color: var(--text-default);
+    color: var(--text-default, #dcddde);
     background-color: var(--input-background);
     border: none;
     transition: border-color 0.2s ease-in-out 0s;
@@ -103,7 +107,7 @@
     border: 1px solid var(--input-border);
     border-radius: 8px;
     box-sizing: border-box;
-    color: var(--text-default);
+    color: var(--text-default, #dcddde);
 }
 
 #undiscord fieldset {
@@ -117,7 +121,7 @@
     box-sizing: border-box;
     width: 100%;
     border-radius: 3px;
-    color: var(--text-default);
+    color: var(--text-default, #dcddde);
     background-color: var(--input-background);
     border: none;
     transition: border-color 0.2s ease-in-out 0s;
@@ -133,7 +137,7 @@
     border: 1px solid var(--input-border);
     border-radius: 8px;
     box-sizing: border-box;
-    color: var(--text-default);
+    color: var(--text-default, #dcddde);
     font-size: 16px;
     height: 44px;
     padding: 12px 10px;
@@ -151,7 +155,7 @@
 
 #undiscord .sectionDescription {
     margin-bottom: 16px;
-    color: var(--header-secondary);
+    color: var(--header-secondary, #b9bbbe) !important;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -292,7 +296,7 @@
     background-color: var(--background-floating);
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
-    color: var(--text-default);
+    color: var(--text-default, #dcddde);
     border-radius: 5px;
     pointer-events: none;
 }
